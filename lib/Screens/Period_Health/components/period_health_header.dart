@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../components/profile_pics.dart';
+
 class PeriodHealthHeader extends StatelessWidget {
   const PeriodHealthHeader({
     Key? key,
@@ -43,14 +45,10 @@ class PeriodHealthHeader extends StatelessWidget {
               )
             ],
           ),
-          Padding(
-            padding: EdgeInsets.only(right: 15),
-            child: CircleAvatar(
-              backgroundImage: AssetImage('assets/images/Profile Image.png'),
-            ),
-          )
+          ProfilePics()
         ],
       ),
     );
   }
 }
+

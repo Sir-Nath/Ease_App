@@ -1,6 +1,7 @@
 import 'package:ease_app/Screens/Period_Health/components/period_health_card.dart';
 import 'package:ease_app/Screens/Period_Health/components/period_health_header.dart';
 import 'package:ease_app/Screens/Work_Out/work_out_screen.dart';
+import 'package:ease_app/Screens/Yoga/yoga_stretch_screen.dart';
 import 'package:ease_app/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -36,7 +37,11 @@ class Body extends StatelessWidget {
               text2: 'The right stretches you should try out!',
               col: Colors.white,
                 isImage: false,
-              press: (){},
+              press: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                  return YogaStretchScreen();
+                }));
+              },
             ),
             PeriodHealthCard(
                 'assets/images/blogposts.png',
